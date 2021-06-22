@@ -3,7 +3,7 @@ entries:
   lte-orc8r:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-06-22T12:33:13.999667-04:00"
+    created: "2021-06-22T15:49:46.273152-04:00"
     dependencies:
     - name: orc8rlib
       repository: file://../../../../orc8r/cloud/helm/orc8rlib
@@ -23,7 +23,7 @@ entries:
   orc8r:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-06-22T12:33:14.012385-04:00"
+    created: "2021-06-22T15:49:46.289201-04:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -55,4 +55,20 @@ entries:
     urls:
     - orc8r-1.5.22.tgz
     version: 1.5.22
-generated: "2021-06-22T12:33:13.99725-04:00"
+  secrets:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-06-22T15:49:46.289906-04:00"
+    description: A Helm chart to create magma orchestrator secrets
+    digest: b2d987249add8392f4e5a8062199d243c4f73fee4aa08e21186fb15467b7649f
+    keywords:
+    - magma
+    - orc8r
+    - secrets
+    name: secrets
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - secrets-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-06-22T15:49:46.269512-04:00"
